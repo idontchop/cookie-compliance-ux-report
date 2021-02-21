@@ -116,7 +116,7 @@ Figure 6 shows how all 6 apps have right skewed data, with outliers ranging as f
 
 Uxplanet.org (2019) specifies that a 10 second load time increases the probability of a bounce to 123%. A 20 second load time, twice that amount, could be the result of confounding variables. An origin with a 20 second load time may employ a type of technology that affects the onload time in an unmeasurable way by the Chrome browser. While the 20 second threshold is somewhat arbitrary, origins with a load time over 20 seconds are unlikely to be representative of the population.
 
-![](RackMultipart20210221-4-1xdlahw_html_122a22686764a635.png)
+![alt text](https://github.com/idontchop/cookie-compliance-ux-report/blob/main/plots/Onload/Means.png)
 
 _Figure 6 Privacy Compliance Mean Response Box Plot_
 
@@ -132,7 +132,7 @@ stackedLogData[&#39;OneTrust&#39;], stackedLogData[&#39;Iubenda&#39;], stackedLo
 
 Levene&#39;s Test: stat: 36.413354354782186 p: 5.793557508427283e-37
 
-![](RackMultipart20210221-4-1xdlahw_html_624dcf96e1970263.png)
+![alt text](https://github.com/idontchop/cookie-compliance-ux-report/blob/main/plots/Onload/app%20dist%20log.png)
 
 _Figure 7 App Mean Response Distribution_
 
@@ -149,6 +149,8 @@ Using Python&#39;s Scipy package, the differences found in the means of origins 
 After ANOVA determined a significance level exists between the Privacy Compliance Samples, Tukey&#39;s Range test is performed to determine which apps are significantly different. Tukey uses pairwise comparisons between the means of each sample using a studentized range distribution and can suggest which apps are significant from one another (Lee &amp; Lee, 2018).
 
 Python&#39;s Statsmodels package is used to run the pairwise Tukey.
+
+![alt text](https://github.com/idontchop/cookie-compliance-ux-report/blob/main/plots/Onload/tukey.png)
 
 # Summary
 
