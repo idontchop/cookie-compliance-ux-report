@@ -1,4 +1,4 @@
-**Parametric Analysis of Privacy Compliance Apps**
+# Parametric Analysis of Privacy Compliance Apps
 
 The General Data Protection Regulation (GDPR) passed by the EU in 2018 (Wolfrod, 2019), and the California Consumer Privacy Act, passed in 2018 (CCPA, 2020), changed the experience for web users. Web Site owners are required to notify users how their data is gathered and used, resulting in an intrusive popup or modal. &quot;Accept Cookies&quot; has since become a staple in the web browsing experience.
 
@@ -9,6 +9,12 @@ This study seeks to find if the addition of these apps to an origin website has 
 According to research by Forbes (Salz, 2019), nearly 70% of consumers say load times affect their experience and willingness to make purchases. While compliance to new Privacy laws should be content distributors&#39; first concern, compliance should not reduce the User Experience where possible.
 
 This paper shows that significant differences in Privacy Compliance Apps exist for the Onload measurement, but not the First Contentful Paint measurement. Additionally, significant differences in the mean load times between the top 6 Privacy Compliance Apps were found with Cookiebot and Osano having the lowest mean onload time.
+
+Python Notebook with this research (note that BigQuery datasets not included in github due to file size limitation)
+[a link](https://https://github.com/idontchop/cookie-compliance-ux-report/blob/main/cookie-system-analysis-v2.ipynb)
+
+The BigQuery Sql statement used to extract the data is located at:
+[a link](https://github.com/idontchop/cookie-compliance-ux-report/blob/main/onload_query.sql)
 
 # Data Collection and Extraction
 
@@ -67,11 +73,11 @@ With the choice of analyzing the data from the Ux-report with either First Conte
 - H0 Origins with Privacy Compliant apps show no significant difference in load times from the population of origins as determined by the Ux-report.
 - H1 Origins with Privacy Compliant apps show a significant impact on load times as determined by the Ux-report.
 
-![](RackMultipart20210221-4-1xdlahw_html_92d1524494ed6dca.png)
+![alt text](https://github.com/idontchop/cookie-compliance-ux-report/blob/main/plots/FCP/app%20no%20app%20dist%20plot.png)
 
 _Figure 1 First Contentful Paint Distribution_
 
-![](RackMultipart20210221-4-1xdlahw_html_fff3e2f6f63d468f.png)
+![alt text](https://github.com/idontchop/cookie-compliance-ux-report/blob/main/plots/Onload/app%20no%20app%20dist%20plot.png)
 
 _Figure 2 Onload Distribution_
 
@@ -100,7 +106,7 @@ Analysis of Variance (ANOVA) will be used to test the null hypothesis. ANOVA com
 
 Figure 5 shows the distribution of Privacy App Mean Response times. The plot suggests right-skewed data like the previous tested Privacy Complaint Apps group and possible heterogeneity of variance.
 
-![](RackMultipart20210221-4-1xdlahw_html_de92669a9b7fc2bc.png)
+![alt text](https://github.com/idontchop/cookie-compliance-ux-report/blob/main/plots/Onload/app%20dist.png)
 
 _Figure 5 Privacy App Mean Response Distribution_
 
