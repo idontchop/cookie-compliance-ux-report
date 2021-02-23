@@ -11,7 +11,7 @@ According to research by Forbes (Salz, 2019), nearly 70% of consumers say load t
 This paper shows that significant differences in Privacy Compliance Apps exist for the Onload measurement, but not the First Contentful Paint measurement. Additionally, significant differences in the mean load times between the top 6 Privacy Compliance Apps were found with Cookiebot and Osano having the lowest mean onload time.
 
 Python Notebook with this research (note that BigQuery datasets not included in github due to file size limitation)
-[a link](https://https://github.com/idontchop/cookie-compliance-ux-report/blob/main/cookie-system-analysis-v2.ipynb)
+[a link](https://github.com/idontchop/cookie-compliance-ux-report/blob/main/cookie-system-analysis-v2.ipynb)
 
 The BigQuery Sql statement used to extract the data is located at:
 [a link](https://github.com/idontchop/cookie-compliance-ux-report/blob/main/onload_query.sql)
